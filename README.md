@@ -2,8 +2,11 @@
 Présentation:
 
 Nom et prénom : Ons Mami
+
 Filière : Technologie de l'Informatique
+
 Établissement : ISET de Nabeul
+
 Objectif du projet:
 
 Ce projet consiste à créer un portfolio numérique pour présenter mes projets, mes réalisations et les compétences acquises durant ma formation en informatique.
@@ -12,20 +15,31 @@ Ce projet consiste à créer un portfolio numérique pour présenter mes projets
 Liste des modules:
 
 Cybersécurité :
+
 découverte des menaces informatiques et des bonnes pratiques de protection.
+
 Python :
+
 réalisation de programmes et de mini-projets.
+
 Langage C : 
+
 présentation des notions de base de la programmation en C.
+
 Algorithmique :
+
 étude des algorithmes de recherche et de tri.
+
 Systèmes d'exploitation :
+
 découverte de Windows, Linux et macOS.
 
 Architecture des ordinateurs et électronique :
+
 étude des composants informatiques et des portes logiques.
 
 Développement web : 
+
 création de pages web avec HTML, CSS et JavaScript.
 
 
