@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Algorithmique</title>
+        <link rel="stylesheet" href="style.css">
+    </head>  
+    <body>   
+    <header>
+        <h1>Algorithmique</h1>
+        <p>Présentation de trois algorithmes fondamentaux</p>
+    </header> 
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="python.html">Python</a>
+        <a href="langage-c.html">Langage C</a>
+        <a href="algorithmique.html">Algorithmique</a>
+        <a href="systemes-exploitation.html">Systèmes d'exploitation</a>
+    </nav>  
+    <main>   
+        <section class="carte">
+            <h2>Introduction</h2>
+            <p>
+                L'algorithmique permet de résoudre un problème
+                en suivant une suite d'instructions organisées.
+                Dans cette page, je présente trois algorithmes :
+                la recherche du maximum, le tri à bulles
+                et la recherche séquentielle.
+            </p>
+        </section>   
+        <section class="carte">
+            <h2>1. Recherche du maximum</h2> 
+            <h3>Idée générale</h3>
+            <p>
+                Cet algorithme permet de trouver le plus grand
+                nombre dans un tableau.
+            </p>   
+            <h3>Pseudo-code</h3>
+            <pre>
+    Début
+        T = [12, 5, 18, 9]
+        max = T[0]  
+        Pour chaque élément x de T
+            Si x > max alors
+                max = x
+            Fin Si
+        Fin Pour  
+        Afficher max
+    Fin
+            </pre>  
+            <h3>Exemple pas à pas</h3>
+            <p>
+                Tableau : [12, 5, 18, 9]
+            </p>
+            <ul>
+                <li>On commence avec max = 12.</li>
+                <li>5 est inférieur à 12, donc max reste 12.</li>
+                <li>18 est supérieur à 12, donc max devient 18.</li>
+                <li>9 est inférieur à 18, donc max reste 18.</li>
+            </ul>
+            <p><strong>Résultat : 18</strong></p>
+    
+            <h3>Traduction en Python</h3>
+            <pre><code>
+    T = [12, 5, 18, 9]
+    maximum = T[0]   
+    for x in T:
+        if x > maximum:
+            maximum = x   
+    print("Le maximum est :", maximum)
+            </code></pre>   
+            <h3>Organigramme</h3>
+            <img src="medias/maximum.png"
+                 alt="Organigramme de recherche du maximum">
+        </section>   
+        <section class="carte">
+            <h2>2. Tri à bulles (Bubble Sort)</h2>   
+            <h3>Idée générale</h3>
+            <p>
+                Le tri à bulles permet de classer les nombres
+                dans l'ordre croissant en comparant deux
+                éléments voisins et en les échangeant si nécessaire.
+            </p>  
+            <h3>Pseudo-code</h3>
+            <pre>
+    Début
+        T = [5, 2, 8, 1]
+    
+        Pour i de 0 à n-2
+            Pour j de 0 à n-i-2
+                Si T[j] > T[j+1] alors
+                    Échanger T[j] et T[j+1]
+                Fin Si
+            Fin Pour
+        Fin Pour
+    
+        Afficher T
+    Fin
+            </pre>    
+            <h3>Exemple pas à pas</h3>
+            <p>Tableau initial : [5, 2, 8, 1]</p>
+            <ul>
+                <li>Premier passage : [2, 5, 1, 8]</li>
+                <li>Deuxième passage : [2, 1, 5, 8]</li>
+                <li>Troisième passage : [1, 2, 5, 8]</li>
+            </ul>
+            <p><strong>Résultat : [1, 2, 5, 8]</strong></p>    
+            <h3>Traduction en Python</h3>
+            <pre><code>
+    T = [5, 2, 8, 1]
+    n = len(T)   
+    for i in range(n - 1):
+        for j in range(n - i - 1):
+            if T[j] > T[j + 1]:
+                T[j], T[j + 1] = T[j + 1], T[j]
+    print("Tableau trié :", T)
+            </code></pre>   
+            <h3>Organigramme</h3>
+            <img src="medias/tri-bulles.png"
+                 alt="Organigramme du tri à bulles">
+        </section>   
+        <section class="carte">
+            <h2>3. Recherche séquentielle</h2>   
+            <h3>Idée générale</h3>
+            <p>
+                La recherche séquentielle consiste à parcourir
+                un tableau élément par élément pour trouver
+                une valeur recherchée.
+            </p>  
+            <h3>Pseudo-code</h3>
+            <pre>
+    Début
+        T = [3, 8, 5, 1]
+        valeur = 8
+        position = -1
+        Pour i de 0 à n-1
+            Si T[i] = valeur alors
+                position = i
+                Arrêter la boucle
+            Fin Si
+        Fin Pour  
+        Si position != -1 alors
+            Afficher "Valeur trouvée"
+        Sinon
+            Afficher "Valeur non trouvée"
+        Fin Si
+    Fin
+            </pre>  
+            <h3>Exemple pas à pas</h3>
+            <p>Tableau : [3, 8, 5, 1]</p>
+            <p>Valeur recherchée : 8</p>
+            <ul>
+                <li>Position 0 : 3 est différent de 8.</li>
+                <li>Position 1 : 8 est égal à 8.</li>
+                <li>La valeur est trouvée à la position 1.</li>
+            </ul>   
+            <h3>Traduction en Python</h3>
+            <pre><code>
+    T = [3, 8, 5, 1]
+    valeur = 8
+    position = -1   
+    for i in range(len(T)):
+        if T[i] == valeur:
+            position = i
+            break   
+    if position != -1:
+        print("Valeur trouvée à la position", position)
+    else:
+        print("Valeur non trouvée")
+            </code></pre>   
+            <h3>Organigramme</h3>
+            <img src="medias/recherche.png"
+                 alt="Organigramme de recherche séquentielle">
+        </section>    
+        <section class="carte">
+            <h2>Conclusion</h2>
+            <p>
+                Ces trois algorithmes permettent de résoudre
+                différents problèmes. Ils utilisent des notions
+                importantes en programmation comme les conditions,
+                les boucles et les tableaux.
+            </p>
+        </section>   
+    </main>
+    <footer>
+        <p>Portfolio Digital Skills - Algorithmique</p>
+    </footer>  
+    </body>
+    </html>
+</html>
