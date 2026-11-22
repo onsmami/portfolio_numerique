@@ -51,8 +51,6 @@ HTML5
 
 CSS3
 
-JavaScript
-
 Python
 
 Canva
