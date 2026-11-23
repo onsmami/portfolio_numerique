@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecture des ordinateurs et électronique</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <section class="transparence-ia">
+    <h2>Fiche de transparence IA</h2>
+    <p><strong>Outils utilisés :</strong> ChatGPT, VS Code</p>
+    <p>
+      <strong>Rôle de l'IA :</strong> L'IA m'a aidée à expliquer les notions,
+      organiser les idées et proposer des exemples.
+    </p>
+    <p>
+      <strong>Ce que j'ai fait moi-même :</strong> J'ai choisi le contenu,
+      vérifié les informations, corrigé les erreurs et réalisé la mise en page.
+    </p>
+    <p>
+      <strong>Sources vérifiées :</strong>
+      <a href="https://www.cybermalveillance.gouv.fr/">
+        Cybermalveillance.gouv.fr</a
+      >
+    </p>
+  </section>
+  <body>
+    <header>
+      <h1>Architecture des ordinateurs et électronique</h1>
+      <p>
+        Découverte de l'architecture informatique et de la logique numérique
+      </p>
+    </header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="python.html">Python</a>
+      <a href="langage-c.html">Langage C</a>
+      <a href="algorithmique.html">Algorithmique</a>
+      <a href="systemes-exploitation.html">Systèmes d'exploitation</a>
+    </nav>
+    <main>
+      <section class="carte">
+        <h2>1. Architecture d'un ordinateur</h2>
+
+        <h3>Définition</h3>
+        <p>
+          L'architecture d'un ordinateur représente l'organisation de ses
+          composants principaux. Ces composants communiquent entre eux pour
+          exécuter les programmes et traiter les données.
+        </p>
+
+        <h3>Schéma de l'architecture</h3>
+
+        <div class="architecture">
+          <div class="composant">
+            <h3>Processeur (CPU)</h3>
+            <p>
+              Exécute les instructions et effectue les opérations de calcul.
+            </p>
+          </div>
+
+          <div class="composant">
+            <h3>Mémoire (RAM)</h3>
+            <p>
+              Stocke temporairement les données et les programmes en cours
+              d'utilisation.
+            </p>
+          </div>
+
+          <div class="composant">
+            <h3>Entrées / Sorties</h3>
+            <p>
+              Permettent la communication avec le clavier, la souris et l'écran.
+            </p>
+          </div>
+
+          <div class="bus">
+            BUS : transporte les données, les adresses et les signaux de
+            commande.
+          </div>
+        </div>
+
+        <h3>Explication des composants</h3>
+
+        <ul>
+          <li>
+            <strong>Processeur :</strong> le cerveau de l'ordinateur, il traite
+            les instructions.
+          </li>
+          <li>
+            <strong>Mémoire :</strong> conserve temporairement les informations
+            utilisées par les programmes.
+          </li>
+          <li>
+            <strong>Entrées :</strong> permettent d'envoyer des informations à
+            l'ordinateur.
+          </li>
+          <li>
+            <strong>Sorties :</strong> permettent d'afficher ou de transmettre
+            les résultats.
+          </li>
+          <li>
+            <strong>Bus :</strong> assure la communication entre les différents
+            composants.
+          </li>
+        </ul>
+      </section>
+      <section class="carte">
+        <h2>2. Systèmes de numération</h2>
+
+        <p>
+          Un système de numération permet de représenter les nombres à l'aide de
+          symboles. En informatique, les systèmes binaire et hexadécimal sont
+          très utilisés.
+        </p>
+
+        <h3>A. Le système binaire</h3>
+
+        <p>
+          Le système binaire utilise seulement deux chiffres : 0 et 1. Il est
+          utilisé par les ordinateurs pour représenter les informations.
+        </p>
+
+        <h3>B. Le système hexadécimal</h3>
+
+        <p>
+          Le système hexadécimal utilise 16 symboles : les chiffres de 0 à 9 et
+          les lettres de A à F.
+        </p>
+
+        <p>A = 10, B = 11, C = 12, D = 13, E = 14 et F = 15.</p>
+
+        <h3>C. Exemples de conversions</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Décimal</th>
+              <th>Binaire</th>
+              <th>Hexadécimal</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>10</td>
+              <td>1010</td>
+              <td>A</td>
+            </tr>
+
+            <tr>
+              <td>13</td>
+              <td>1101</td>
+              <td>D</td>
+            </tr>
+
+            <tr>
+              <td>15</td>
+              <td>1111</td>
+              <td>F</td>
+            </tr>
+
+            <tr>
+              <td>25</td>
+              <td>11001</td>
+              <td>19</td>
+            </tr>
+
+            <tr>
+              <td>42</td>
+              <td>101010</td>
+              <td>2A</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>D. Exemple de conversion</h3>
+
+        <p><strong>Conversion de 13 en binaire :</strong></p>
+
+        <p>13 = 8 + 4 + 1</p>
+
+        <p>Donc : 13 en décimal = 1101 en binaire.</p>
+
+        <p><strong>Conversion de 42 en hexadécimal :</strong></p>
+
+        <p>
+          42 ÷ 16 = 2, reste 10. Le nombre 10 correspond à A en hexadécimal.
+        </p>
+
+        <p>Donc : 42 en décimal = 2A en hexadécimal.</p>
+      </section>
+
+      <section class="carte">
+        <h2>3. Électronique numérique : portes logiques</h2>
+
+        <h3>Définition</h3>
+
+        <p>
+          Les portes logiques sont des composants électroniques qui réalisent
+          des opérations logiques à partir de valeurs binaires : 0 et 1.
+        </p>
+
+        <h3>A. Porte AND (ET)</h3>
+
+        <p>
+          La porte AND donne 1 uniquement lorsque les deux entrées A et B valent
+          1.
+        </p>
+
+        <div class="porte">A ───┐ AND ─── S B ───┘</div>
+
+        <table>
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>S = A AND B</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+        <h3>B. Porte OR (OU)</h3>
+
+        <p>La porte OR donne 1 lorsqu'au moins une des deux entrées vaut 1.</p>
+
+        <div class="porte">A ───┐ OR ─── S B ───┘</div>
+
+        <table>
+          <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>S = A OR B</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+        <h3>C. Porte NOT (NON)</h3>
+
+        <p>
+          La porte NOT inverse la valeur de son entrée : 0 devient 1 et 1
+          devient 0.
+        </p>
+
+        <div class="porte">A ─── NOT ─── S</div>
+
+        <table>
+          <tr>
+            <th>A</th>
+            <th>S = NOT A</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+        </table>
+
+        <h3>Schéma des portes logiques</h3>
+
+        <p>
+          Les portes AND, OR et NOT réalisent les opérations fondamentales de la
+          logique numérique.
+        </p>
+
+        <p>
+          Pour visualiser leur fonctionnement, on peut utiliser un simulateur de
+          circuits logiques en ligne.
+        </p>
+
+        <p>
+          <a href="https://logic.ly/demo/" target="_blank">
+            Découvrir un simulateur de portes logiques
+          </a>
+        </p>
+      </section>
+      <section class="carte">
+        <h2>Conclusion</h2>
+        <p>
+          L'architecture des ordinateurs permet de comprendre le fonctionnement
+          des composants d'un ordinateur. Les systèmes de numération permettent
+          de représenter les données, tandis que les portes logiques réalisent
+          les opérations fondamentales de l'électronique numérique.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>Portfolio Digital Skills - Architecture et électronique</p>
+    </footer>
+  </body>
+</html>
